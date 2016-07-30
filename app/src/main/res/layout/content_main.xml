@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+    <EditText
+        android:id="@+id/searchTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc"
+        android:background="@android:drawable/editbox_background"
+        android:singleLine="true"
+        android:textColor="#000" />
+    <Button
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchTerm"
+        />
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit"
+        android:layout_marginTop="16dp"
+        android:id="@+id/feedback" />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedback"
+        android:layout_marginTop="16dp"
+        android:text="@string/videoTitle"
+        android:visibility="invisible"
+        android:id="@+id/videoTitleD" />
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/videoTitleD"
+        android:layout_below="@id/feedback"
+        android:layout_marginTop="16dp"
+        android:id="@+id/videoTitle" />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoTitle"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        android:text="@string/videoDesc"
+        android:id="@+id/videoDescD" />
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/videoDescD"
+        android:layout_below="@id/videoTitle"
+        android:layout_marginTop="16dp"
+        android:id="@+id/videoDesc" />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoDesc"
+        android:layout_marginTop="16dp"
+        android:text="@string/publishTime"
+        android:visibility="invisible"
+        android:id="@+id/publishTimeD" />
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/publishTimeD"
+        android:layout_below="@id/videoDesc"
+        android:layout_marginTop="16dp"
+        android:id="@+id/publishTime" />
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/publishTime"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        />
+</RelativeLayout>

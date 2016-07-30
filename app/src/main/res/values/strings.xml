@@ -1,0 +1,9 @@
+<resources>
+    <string name="hello">Type a keyword to search for an video on Youtube.</string>
+    <string name="videoTitle">Video Name: </string>
+    <string name="videoDesc">Video Description: </string>
+    <string name="publishTime">Publish Time: </string>
+    <string name="videoUrl">CLICK HERE FOR WATCHING</string>
+    <string name="app_name">SearchYoutubeVideo</string>
+    <string name="action_settings">Settings</string>
+</resources>
